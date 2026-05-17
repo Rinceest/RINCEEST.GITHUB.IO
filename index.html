@@ -15,13 +15,18 @@
         nav a:hover { color: #007bff; }
 
         /* Hero Section */
-        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #007bff 0%, #6610f2 100%); color: white; text-align: center; padding: 20px; }
+        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #007bff 0%, #6610f2 100%); color: white; text-align: center; }
         .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
         .hero p { font-size: 1.2rem; opacity: 0.9; }
 
         /* Content Section */
         .content { max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
         h2 { border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px; }
+        
+        /* Image Grid */
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
+        .image-grid img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .image-grid img:hover { transform: scale(1.05); }
         
         /* Footer */
         footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
@@ -44,8 +49,14 @@
         <h2>About</h2>
         <p>Welcome to Rinse City where you can watch the city of Edmonton Rince Its self.
         First up There is Justina Herms aka The Bro Hoe , you can get this squaw to do you and all your bros(I hear she got herpes).
-        This Little Chug drinks a 60oz ok whiskey or vodka a day while she is pregnant! no wonder mental health is a concern in edmonton. Wonder if she can remember the last time she woke up with out the shakes?
+        This Little Chug drinks a 60oz ok whiskey or vodka a day while she is pregnant! no wonder mental health is a concern in edmonton. Wonder if she can remember the last time she woke up with out [...]
         </p>
+        
+        <div class="image-grid">
+            <img src="images/FB_IMG_1779017888399.jpg" alt="Rinse City Image 1">
+            <img src="images/FB_IMG_1779017900759.jpg" alt="Rinse City Image 2">
+            <img src="images/FB_IMG_1779017919080.jpg" alt="Rinse City Image 3">
+        </div>
     </section>
 
     <section id="contact" class="content">
