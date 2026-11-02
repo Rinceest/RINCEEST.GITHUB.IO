@@ -3,67 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rincee.com | Terrance Nadeau</title>
+    <title>Items for Sale | rincee.com</title>
     <style>
-        /* Basic Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #fafafa; }
-
-        /* Navigation */
-        nav { background: #24292e; padding: 1rem; text-align: center; position: sticky; top: 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #007bff; }
-
-        /* Hero Section */
-        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #007bff 0%, #6610f2 100%); color: white; text-align: center; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; opacity: 0.9; }
-
-        /* Content Section */
-        .content { max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #007bff; display: inline-block; margin-bottom: 20px; }
-        
-        /* Image Grid */
-        .image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
-        .image-grid img { width: 50%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-        .image-grid img:hover { transform: scale(1.05); }
-        
-        /* Footer */
-        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
+        header { background: linear-gradient(135deg, #007bff 0%, #6610f2 100%); color: white; text-align: center; padding: 60px 20px; }
+        header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        header p { font-size: 1.15rem; opacity: 0.92; }
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px 40px; }
+        .intro { background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 24px; margin-bottom: 30px; }
+        h2 { margin: 30px 0 16px; border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 4px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 22px; }
+        .card h3 { margin-bottom: 8px; font-size: 1.2rem; }
+        .card p { margin-bottom: 10px; }
+        .price { font-weight: bold; font-size: 1.1rem; margin: 10px 0; }
+        .links a { display: inline-block; margin: 6px 8px 0 0; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: bold; background: #007bff; color: white; }
+        .links a.ebay { background: #24292e; }
+        .links a:hover { opacity: 0.85; }
+        .note { font-size: 0.92rem; color: #666; }
+        footer { text-align: center; padding: 30px 20px 40px; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <header class="hero">
-        <h1>rincee.com</h1>
-        <p>A place to get your Rinsed device fixed without getting rinsed yourself</p>
+    <header>
+        <h1>Items for Sale</h1>
+        <p>Edmonton, AB &middot; Local pickup in Beverly</p>
     </header>
-
-    <section id="about" class="content">
-        <h2>About</h2>
-        <p>Repairing Android phones, from FRP bypass to screen replacment. Accepting etransfer, Paypal, and cash
-        </p>
-        
-        <div class="image-grid">
-          <img src="images/qrcode.png" alt="QR Code">
+    <main>
+        <div class="intro">
+            <p>Items for sale, listed on Facebook Marketplace and eBay. Use the links below to view each listing, including photos, and to buy through that listing. Prices shown are the listed prices on each platform. Availability can change &mdash; the listing itself is the current record.</p>
         </div>
-    </section>
 
-    <section id="contact" class="content">
-        <h2>Get In Touch</h2>
-        <p>Feel free to reach out via email </p>
-        <p style="margin-top: 20px;"><strong>Email:</strong> hello@rincee.com</p>
-    </section>
+        <h2>Trading Cards</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>One Piece Trading Cards &mdash; Lot of 190</h3>
+                <p>190 One Piece trading cards, selling as a lot. All marked Rare, with a few Super Rare, as shown in the listing photo. Condition: Used &ndash; Good.</p>
+                <p class="price">Facebook: CA$80 &middot; eBay: CA$93</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/29233886186236371">Facebook</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164272678">eBay</a>
+                </div>
+            </div>
 
+            <div class="card">
+                <h3>Pokemon TCG Live Code Cards &mdash; Lot of 141 Unused</h3>
+                <p>141 unused Pok&eacute;mon TCG Live code cards. These are code cards, not playable cards. Condition: Used &ndash; Fair.</p>
+                <p class="price">Facebook: CA$15 &middot; eBay: CA$18</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1111595488540841">Facebook</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164273410">eBay</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Pokemon Training Cards Lot &mdash; 26 Cards</h3>
+                <p>26 Pok&eacute;mon ex cards, including duplicates: Mega Mawile ex &times;2 and Kyurem ex &times;2 (24 distinct cards). Good to like new, all in protective sleeves.</p>
+                <p class="price">Facebook: CA$40 &middot; eBay: C$50</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1774862673727027">Facebook</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128163238958">eBay</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Cynthia&rsquo;s Garchomp ex &mdash; Single</h3>
+                <p>Cynthia&rsquo;s Garchomp ex, Black Star Promo SVP 204. Good to like new. Two singles available, sold separately.</p>
+                <p class="price">Facebook: CA$9 each &middot; eBay: CA$11 each</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1509109514750130">Facebook (1)</a>
+                    <a href="https://www.facebook.com/marketplace/item/1805619693983843">Facebook (2)</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164273879">eBay (1)</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164274177">eBay (2)</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Vanillish &mdash; Single</h3>
+                <p>Vanillish, Illustration Rare PAR 190/182. Good to like new. Two singles available, sold separately.</p>
+                <p class="price">Facebook: CA$12 each &middot; eBay: CA$15 each</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1612928890311541">Facebook (1)</a>
+                    <a href="https://www.facebook.com/marketplace/item/1082600894809299">Facebook (2)</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164274746">eBay (1)</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164275253">eBay (2)</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Pokemon ex Card Lot &mdash; 18 Cards + Bonus</h3>
+                <p>18 playable Pok&eacute;mon ex cards, plus a bonus Pok&eacute;mon TCG Live code card sealed in its packet. Good to like new; most in sleeves, a few still in the brand-new packet.</p>
+                <p class="price">Facebook: CA$28 &middot; eBay: CA$33</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1139968271859162">Facebook</a>
+                    <a class="ebay" href="https://www.ebay.ca/itm/128164273092">eBay</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Other Items</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Dr. Martens Cairo Canvas Chukka Boots &mdash; Women&rsquo;s Size 8, Black</h3>
+                <p>Ladies&rsquo; Dr. Martens Cairo Canvas Chukka boots, size 8 US L (6 UK / 7 US M / 39 EU). Used, good condition.</p>
+                <p class="price">Facebook: CA$50</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/marketplace/item/1433683998283897">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="note" style="margin-top: 30px;">Facebook listings are for local pickup in Beverly, Edmonton. eBay listings follow the shipping terms shown on each eBay listing. Please message through the listing if you have a question about an item.</p>
+    </main>
     <footer>
-        &copy; 2024 rincee.com.
+        &copy; rincee.com
     </footer>
-
 </body>
 </html>
